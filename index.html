@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apna didi website</title>
+    <style>
+      *{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    background-color: #0f1111;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* box 1 */
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url(amazon_logo.png);
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+/* box 2 */
+.add-first{
+ font-size: 0.8rem;
+ color: #cccccc;
+}
+.add-second{
+font-size: 1rem;
+}
+.add-icon{
+    display: flex;
+}
+.nav-address{
+    margin-left: 15px;
+}
+.nav-search{
+    display: flex;
+    background-color: pink;
+    height: 40px;
+    width: 620px;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+.search-select{
+width: 10%;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+text-align: center;
+}
+.search-text{
+width: 90%;
+font-size: 1rem;
+border: none;
+}
+.search-icon{
+width: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.2rem;
+background-color: rgb(183, 183, 85);
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+span{
+    font-size: 0.8rem;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+.cart{
+    font-size: 1.5rem;
+}
+.navcart{
+    display: flex;
+}
+.paracart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-all{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+}
+.panel-opts{
+    display: flex;
+    width: 70%;
+}
+.panel-opts p{
+    margin-left: 20px;
+}
+.panel{
+    display: flex;
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero-section{
+    background-image: url(hero_image.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.hero-msg a{
+    color: #007185;
+}
+.shop-section{
+display: flex;
+background-color: #b7dbe2;
+justify-content: space-evenly;
+}
+.box{
+    height: 400px;
+    width: 23%;
+    border: 2px solid black;
+    margin-top: 15px;
+    background-color: white;
+}
+.image1{
+    height: 350px;
+    width: 90%;
+}
+#Health{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image2{
+    height: 350px;
+    width: 90%;
+}
+#brush{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image3{
+    height: 350px;
+    width: 90%;
+}
+#table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image4{
+    height: 350px;
+    width: 90%;
+}
+#samsung{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shop-section2{
+    display: flex;
+    background-color: #b7dbe2;
+    justify-content: space-evenly;
+    }
+    .image5{
+        height: 350px;
+        width: 90%;
+    }
+    #lipstick{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image6{
+        height: 350px;
+        width: 90%;
+    }
+    #dog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image7{
+        height: 350px;
+        width: 90%;
+    }
+    #car{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image8{
+        height: 350px;
+        width: 90%;
+    }
+    #girl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot-panel1{
+        height: 50px;
+        background-color: #223055;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+        .foot-panel2{
+            display: flex;
+            height: 200px;
+            width: 100%;
+            background-color: #1d3d5f;
+            color: white;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .foot-panel2 ul li{
+        list-style: none;
+        }
+        .foot-panel3{
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #053841;
+        }
+        .foot-panel3 img{
+            height: 70px;
+        }
+        .foot-panel4{
+            display: flex;
+            height: 20px;
+            background-color: #02242a;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+          </select>
+          <input type="text" placeholder="Search Amazon" class="search-text" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="nav-signin border">
+          <p><span>Hello,sign in</span></p>
+          <p>Account & Lists</p>
+        </div>
+        <div class="nav-signin border">
+          <p><span>Returns</span></p>
+          <p>& Orders</p>
+        </div>
+            <div class="navcart border">
+           <div class="cart">
+               <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <p class="paracart">Cart</p>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="panel">
+       <div class="panel-all">
+        <i class="fa-solid fa-bars"></i>
+        <p>All</p>
+       </div>
+
+       <div class="panel-opts">
+        <P>Today's deal</P>
+        <P>Customer Service</P>
+        <p>Registry</p>
+        <p>Gift cards</p>
+        <p>Sell</p>
+       </div>
+
+       <div class="panel-deals">
+        <p>Shop deals in electronic</p>
+       </div>
+      </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>you are on amazon.com shop in india for million of products.<a>Click here to go to amazon.in</a></p>
+        </div> box
+    </div>
+
+    <div class="shop-section">
+      <div class="box1 box" id="Health">
+        <h2>Clothing</h2>
+        <img src="box1_image.jpg" alt="my image" class="image1">
+        <p>see more</p>
+      </div>
+      <div class="box2 box" id="brush">
+        <h2>Health & personal care</h2>
+        <img src="box2_image.jpg" alt="my image" class="image2">
+        <p>see more</p>
+      </div>
+      <div class="box3 box" id="table">
+        <h2>Furniture</h2>
+        <img src="box3_image.jpg" alt="my image" class="image3">
+        <p>see more</p>
+      </div>
+      <div class="box4 box" id="samsung">
+        <h2>Gadjets</h2>
+        <img src="box4_image.jpg" alt="my image" class="image4">
+        <p>see more</p>
+      </div>
+    </div>
+
+    <div class="shop-section2">
+      <div class="box5 box" id="lipstick">
+        <h2>Beauty</h2>
+        <img src="box5_image.jpg" alt="my image" class="image5">
+        <p>see more</p>
+      </div>
+      <div class="box6 box" id="dog">
+        <h2>Pets Care</h2>
+        <img src="box6_image.jpg" alt="my image" class="image6">
+        <p>see more</p>
+      </div>
+      <div class="box7 box" id="car">
+        <h2>Toys</h2>
+        <img src="box7_image.jpg" alt="my image" class="image7">
+        <p>see more</p>
+      </div>
+      <div class="box8 box" id="girl">
+        <h2>Fashion</h2>
+        <img src="box8_image.jpg" alt="my image" class="image8">
+        <p>see more</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot-panel1">
+        <p>Back on top</p>
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <h2>Make Money With us</h2>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>About Amazon</li>
+          <li>Invester Relatoins</li>
+          <li>Amazon Devices</li>
+          <li>Amazon Science</li>
+        </ul>
+        <ul>
+          <h2>Amazon Payment products</h2>
+          <li>Amazon Bussiness Card</li>
+          <li>Shop with points</li>
+          <li>Reload your Balance</li>
+          <li>Amazon Currency Converter</li>
+        </ul>
+        <ul>
+          <h2>Amazon Payment products</h2>
+          <li>Amazon Bussiness Card</li>
+          <li>Shop with points</li>
+          <li>Reload your Balance</li>
+          <li>Amazon Currency Converter</li>
+        </ul>
+        <ul>
+          <h2>Let Us Help You</h2>
+          <li>Your Accounts</li>
+          <li>Your Orders</li>
+          <li>Returns &<br>Replacements</li>
+          <li>Amazon Assistance</li>
+          <li>Help</li>
+        </ul>
+      </div>
+      <div class="foot-panel3">
+        <img src="amazon_logo.png" alt="my image">
+      </div>
+      <div class="foot-panel4">
+        <p>Conditions of use privacy notice your adds privacy ads choices@ 1996-2023 Amazon.com, Inc. or its affiliates</p>
+      </div>
+    </footer>
+  </body>
+</html>
